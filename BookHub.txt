@@ -1,0 +1,196 @@
+BookHub - Online Book Store Structure
+1. CUSTOMER FEATURES
+A. Homepage & Navigation
+Header with logo, search bar, shopping cart icon, user profile menu
+Navigation menu (Home, Books, Categories, About, Contact)
+Hero section with featured books carousel
+Best sellers section
+New arrivals section
+Footer with links, contact info, social media
+B. Book Browsing & Discovery
+Browse Books Page - Display all books in grid/list view
+Category Filter - Fiction, Non-Fiction, Science, History, Romance, etc.
+Search Functionality - Search by title, author, ISBN (AJAX - no page refresh)
+Advanced Filters - Price range, rating, publication year, language
+Sort Options - By price, rating, newest, bestselling, alphabetical
+Book Details Page - Title, author, description, price, rating, reviews, cover image, availability
+C. Shopping Cart
+Add/remove books from cart (AJAX)
+Update quantity
+Real-time price calculation
+Cart summary (subtotal, tax, discount)
+Apply coupon codes
+Save cart (persistent storage)
+Cart abandonment warning
+D. Wishlist/Favorites
+Add books to wishlist (requires login)
+View saved books
+Move from wishlist to cart
+Share wishlist with others
+E. User Authentication & Profile
+Registration - Email, password, name, address
+Login - Email/password authentication
+Password Reset - Forgot password functionality
+User Dashboard - Order history, saved addresses, payment methods
+Edit Profile - Update personal info, change password
+Address Book - Multiple delivery addresses
+F. Reviews & Ratings
+Display 5-star rating system
+Customer reviews with text
+Filter reviews by rating
+Helpful/unhelpful votes
+Only verified buyers can review
+G. Checkout Process
+Review cart items
+Select delivery address (or add new)
+Choose shipping method (Standard, Express, Overnight)
+Review order summary
+Mock payment processing
+Order confirmation with order ID
+H. Order Management
+View order history
+Track order status (Pending → Processing → Shipped → Delivered)
+Download invoice/receipt
+Cancel order (if not shipped)
+Return/refund request
+2. PAYMENT SYSTEM (Mock)
+Payment Flow
+Customer enters card details on checkout page
+Frontend validates card format (AJAX)
+Sends payment request to backend
+Backend processes payment (simulates 500ms delay)
+Generates transaction ID
+Returns success/failure response
+Displays confirmation page
+Payment Data Stored
+Transaction ID
+Order ID (linked)
+Amount paid
+Payment date/time
+Payment status (Success/Failed/Pending)
+Card last 4 digits (masked)
+3. ADMIN FEATURES
+A. Book Management
+Add New Book - Title, author, ISBN, description, price, cover image, stock quantity
+Edit Book Details - Update price, description, availability
+Delete Books - Remove from catalog
+Book Inventory - Track stock levels, low stock alerts
+Bulk Upload - Import books from CSV/Excel
+B. Order Management
+View all customer orders
+Filter orders by status, date, amount
+Update order status (manually process shipments)
+View order details and customer info
+Generate shipping labels
+Mark as shipped/delivered
+C. Sales Analytics & Reports
+Total revenue (daily, monthly, yearly)
+Top-selling books
+Most reviewed books
+Customer acquisition data
+Sales graphs and charts
+Inventory turnover rates
+D. User Management
+View all customers
+Customer details and purchase history
+Manage customer accounts (suspend, delete)
+View customer feedback
+Send promotional emails
+E. Discount & Promotions
+Create discount codes (percentage/fixed amount)
+Set expiry dates
+Apply to specific books or categories
+Track coupon usage
+F. Settings & Configuration
+Shipping rates & zones
+Tax settings
+Email templates
+Company info
+Payment settings
+4. DATABASE STRUCTURE
+A. Users Collection
+User ID, name, email, password (hashed), phone
+Addresses (billing, shipping)
+Wishlist IDs
+Account created date
+Last login
+B. Books Collection
+Book ID, ISBN, title, author, description
+Price, discount price
+Category, genre, language
+Stock quantity, sold count
+Rating (average), review count
+Cover image URL
+Publication date
+C. Orders Collection
+Order ID, user ID, order date
+Items (book ID, quantity, price per item)
+Total amount, tax, discount
+Shipping address
+Order status (Pending, Processing, Shipped, Delivered)
+Delivery date
+Tracking number
+D. Payments Collection
+Transaction ID, order ID, user ID
+Amount paid, payment date
+Payment status
+Card details (masked)
+Mock payment method type
+E. Reviews Collection
+Review ID, book ID, user ID
+Rating (1-5 stars)
+Review text
+Review date
+Helpful votes count
+Verified purchase flag
+F. Coupons Collection
+Coupon code, discount percentage/amount
+Validity period (start date, end date)
+Max uses, current uses
+Applicable books/categories
+Minimum purchase amount
+5. TECHNOLOGY IMPLEMENTATION
+Frontend Technologies
+HTML - Structure of all pages
+CSS - Styling, responsive design, animations
+JavaScript - Form validation, cart logic, DOM manipulation
+jQuery - Event handling, AJAX calls, DOM updates
+AJAX - Add to cart, search, filters (no page reload)
+React - Product cards, cart component, filters, dashboard
+Backend Technologies
+Node.js - Runtime environment
+Express.js - Web framework, routing, middleware
+REST APIs - For frontend-backend communication
+Database
+MongoDB/MySQL - Store users, books, orders, payments, reviews
+6. USER WORKFLOWS
+Customer Journey
+Browse - Visit homepage, explore books, use search/filters
+Select - View book details, read reviews
+Add to Cart - Add quantity, save to cart (AJAX)
+Checkout - Enter address, select shipping
+Pay - Mock payment processing
+Confirm - View order confirmation, get order ID
+Track - Monitor order status in dashboard
+Receive - Download invoice, leave review
+Admin Workflow
+Login - Access admin dashboard
+Manage - Add/edit/delete books, manage inventory
+Monitor - View orders, process shipments
+Analyze - Check sales reports and analytics
+Optimize - Create promotions, manage discounts
+7. KEY FEATURES SUMMARY
+✓ Product catalog with 100+ books
+✓ Advanced search & filtering
+✓ User registration & authentication
+✓ Shopping cart with AJAX updates
+✓ Wishlist functionality
+✓ Mock payment processing
+✓ Order tracking & management
+✓ Review & rating system
+✓ Admin dashboard
+✓ Sales analytics
+✓ Responsive design (mobile-friendly)
+✓ Secure data handling
+
+This structure covers HTML, JavaScript, jQuery, AJAX, React, Node.js, and Express - all your required technologies!
