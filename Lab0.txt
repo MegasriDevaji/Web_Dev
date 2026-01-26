@@ -1,0 +1,229 @@
+Lab 0 content:
+
+1️⃣ <form>
+
+Description:
+Defines an HTML form used to collect user input and send it for processing.
+
+Syntax:
+
+<form onsubmit="return validateForm()">
+
+
+Example Used:
+
+<form onsubmit="return validateForm()">
+
+2️⃣ <fieldset>
+
+Description:
+Groups related form elements together and draws a box around them.
+
+Syntax:
+
+<fieldset> ... </fieldset>
+
+
+Example Used:
+
+<fieldset>
+  <legend>Basic Information</legend>
+</fieldset>
+
+3️⃣ <legend>
+
+Description:
+Provides a caption for the <fieldset> element.
+
+Syntax:
+
+<legend>Title</legend>
+
+4️⃣ <label>
+
+Description:
+Defines a label for input elements and improves accessibility.
+
+Syntax:
+
+<label>Text</label>
+
+5️⃣ <input>
+
+Description:
+Used to create various input controls in a form.
+
+| Type     | Purpose            |
+| -------- | ------------------ |
+| text     | Text input         |
+| password | Hidden text        |
+| email    | Email validation   |
+| number   | Numeric input      |
+| tel      | Phone number       |
+| url      | Website URL        |
+| radio    | Single selection   |
+| checkbox | Multiple selection |
+| date     | Date picker        |
+| time     | Time picker        |
+| month    | Month selector     |
+| week     | Week selector      |
+| color    | Color picker       |
+| range    | Slider             |
+| file     | File upload        |
+| hidden   | Hidden data        |
+| search   | Search box         |
+
+Syntax:
+
+<input type="text">
+
+
+Example:
+
+<input type="email" id="email">
+
+6️⃣ <textarea>
+
+Description:
+Used to accept multi-line text input.
+
+Syntax:
+
+<textarea></textarea>
+
+
+Example:
+
+<textarea id="addr"></textarea>
+
+7️⃣ <select>
+
+Description:
+Creates a dropdown list.
+
+Syntax:
+
+<select>
+  <option>Item</option>
+</select>
+
+8️⃣ <option>
+
+Description:
+Defines options inside a dropdown list.
+
+Syntax:
+
+<option value="CSE">CSE</option>
+
+9️⃣ <optgroup>
+
+Description:
+Groups related options inside a <select> element.
+
+Syntax:
+
+<optgroup label="Engineering">
+
+🔟 <datalist>
+
+Description:
+Provides predefined options for an input field.
+
+Syntax:
+
+<datalist id="list">
+
+1️⃣1️⃣ <output>
+
+Description:
+Displays calculation results.
+
+Syntax:
+
+<output name="result"></output>
+
+
+Example:
+
+<output name="sum">10</output>
+
+1️⃣2️⃣ <meter>
+
+Description:
+Displays a scalar measurement within a known range.
+
+Syntax:
+
+<meter value="0.7"></meter>
+
+1️⃣3️⃣ <progress>
+
+Description:
+Shows task completion progress.
+
+Syntax:
+
+<progress value="80" max="100"></progress>
+
+1️⃣4️⃣ <details>
+
+Description:
+Creates a collapsible content block.
+
+Syntax:
+
+<details> ... </details>
+
+1️⃣5️⃣ <summary>
+
+Description:
+Defines a heading for <details>.
+
+Syntax:
+
+<summary>Instructions</summary>
+
+1️⃣6️⃣ <button>
+
+Description:
+Creates a clickable button.
+
+Syntax:
+
+<button type="submit">Submit</button>
+
+1️⃣7️⃣ <span>
+
+Description:
+Inline container used to display validation messages.
+
+Syntax:
+
+<span></span>
+
+1️⃣8️⃣ <noscript>
+
+Description:
+Displays content if JavaScript is disabled.
+
+Syntax:
+
+<noscript>Enable JavaScript</noscript>
+
+1️⃣9️⃣ <br>
+
+Description:
+Inserts a line break.
+
+Syntax:
+
+<br>
+
+| Method             | Purpose              |
+| ------------------ | -------------------- |
+| `getElementById()` | Access elements      |
+| `querySelector()`  | Select elements      |
+| `value`            | Get input value      |
+| `checked`          | Check selection      |
+| `return false`     | Stop form submission |

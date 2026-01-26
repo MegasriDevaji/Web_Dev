@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced Form Validation UI</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Arial;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        .container {
+            width: 900px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .header img {
+            width: 90px;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin-bottom: 10px;
+        }
+
+        form {
+            padding: 25px;
+        }
+
+        fieldset {
+            border: none;
+            background: #f7f9ff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #4b4b4b;
+            padding: 0 10px;
+        }
+
+        label {
+            font-weight: 600;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            border-color: #667eea;
+            outline: none;
+            box-shadow: 0 0 5px #667eea;
+        }
+
+        input[type=radio], input[type=checkbox] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        span {
+            color: red;
+            font-size: 13px;
+        }
+
+        .row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .row div {
+            flex: 1;
+        }
+
+        .extras input {
+            width: auto;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 12px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        button[type=submit] {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        button[type=reset] {
+            background: #ddd;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
+        meter, progress {
+            width: 100%;
+        }
+
+        details {
+            background: #eef1ff;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <img src="https://via.placeholder.com/150" alt="Profile">
+        <h2>Student Registration Form</h2>
+        <p>Modern HTML5 + JavaScript Validation</p>
+    </div>
+
+    <form onsubmit="return validateForm()" oninput="sum.value=Number(a.value)+Number(b.value)">
+
+        <input type="hidden" value="ui-v1">
+
+        <fieldset>
+            <legend>Basic Information</legend>
+
+            <label>Name</label>
+            <input type="text" id="name">
+            <span id="e1"></span>
+
+            <label>Email</label>
+            <input type="email" id="email">
+            <span id="e2"></span>
+
+            <label>Password</label>
+            <input type="password" id="pwd">
+            <span id="e3"></span>
+
+            <label>Age</label>
+            <input type="number" id="age">
+            <span id="e4"></span>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact & Selection</legend>
+
+            <label>Phone</label>
+            <input type="tel" id="phone">
+            <span id="e5"></span>
+
+            <label>Website</label>
+            <input type="url" id="site">
+            <span id="e6"></span>
+
+            <label>Gender</label><br>
+            <input type="radio" name="g"> Male
+            <input type="radio" name="g"> Female
+            <span id="e7"></span><br><br>
+
+            <label>Skills</label><br>
+            <input type="checkbox"> C
+            <input type="checkbox"> Java
+            <input type="checkbox"> Python
+            <span id="e8"></span>
+        </fieldset>
+
+        <fieldset>
+            <legend>More Details</legend>
+
+            <label>Department</label>
+            <select id="dept">
+                <option value="">Select</option>
+                <optgroup label="Engineering">
+                    <option>CSE</option>
+                    <option>ECE</option>
+                </optgroup>
+            </select>
+            <span id="e9"></span>
+
+            <label>Address</label>
+            <textarea id="addr"></textarea>
+            <span id="e10"></span>
+
+            <label>Search Skill</label>
+            <input type="search" list="skills">
+            <datalist id="skills">
+                <option value="C">
+                <option value="Java">
+                <option value="Python">
+            </datalist>
+        </fieldset>
+
+        <fieldset class="extras">
+            <legend>Extras & HTML5 Tags</legend>
+
+            DOB <input type="date">
+            Time <input type="time">
+            Month <input type="month">
+            Week <input type="week"><br><br>
+
+            Color <input type="color">
+            Range <input type="range"><br><br>
+
+            File <input type="file"><br><br>
+
+            <input type="number" id="a" value="5"> +
+            <input type="number" id="b" value="5"> =
+            <output name="sum">10</output><br><br>
+
+            <meter value="0.7"></meter><br><br>
+            <progress value="80" max="100"></progress>
+        </fieldset>
+
+        <details>
+            <summary>Instructions</summary>
+            Fill all required fields before submitting.
+        </details>
+
+        <div class="buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+
+        <noscript>Please enable JavaScript</noscript>
+
+    </form>
+</div>
+
+<script>
+function validateForm() {
+    let ok = true;
+    function err(id,msg){document.getElementById(id).innerHTML=msg; ok=false;}
+
+    if(name.value=="") err("e1","Required"); else e1.innerHTML="";
+    if(email.value=="") err("e2","Required"); else e2.innerHTML="";
+    if(pwd.value=="") err("e3","Required"); else e3.innerHTML="";
+    if(age.value=="") err("e4","Required"); else e4.innerHTML="";
+    if(phone.value=="") err("e5","Required"); else e5.innerHTML="";
+    if(site.value=="") err("e6","Required"); else e6.innerHTML="";
+    if(!document.querySelector("input[name='g']:checked")) err("e7","Select gender"); else e7.innerHTML="";
+    if(document.querySelectorAll("input[type='checkbox']:checked").length==0) err("e8","Select skill"); else e8.innerHTML="";
+    if(dept.value=="") err("e9","Select department"); else e9.innerHTML="";
+    if(addr.value=="") err("e10","Required"); else e10.innerHTML="";
+
+    return ok;
+}
+</script>
+
+</body>
+</html>
