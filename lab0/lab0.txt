@@ -1,0 +1,391 @@
+1. <html>
+
+TAG DESCRIPTION:
+Root element of an HTML document.
+
+SOURCE CODE:
+
+<html>...</html>
+
+
+SAMPLE OUTPUT:
+Defines the HTML page
+
+2. <head>
+
+TAG DESCRIPTION:
+Contains metadata, styles, and scripts.
+
+SOURCE CODE:
+
+<head></head>
+
+
+SAMPLE OUTPUT:
+Not visible on webpage
+
+3. <title>
+
+TAG DESCRIPTION:
+Sets the browser tab title.
+
+SOURCE CODE:
+
+<title>My Website</title>
+
+
+SAMPLE OUTPUT:
+My Website (shown on tab)
+
+4. <body>
+
+TAG DESCRIPTION:
+Contains visible webpage content.
+
+SOURCE CODE:
+
+<body>Content</body>
+
+
+SAMPLE OUTPUT:
+Content
+
+5. <h1>
+
+TAG DESCRIPTION:
+Main heading of the webpage.
+
+SOURCE CODE:
+
+<h1>Main Heading</h1>
+
+
+SAMPLE OUTPUT:
+Main Heading
+
+6. <p>
+
+TAG DESCRIPTION:
+Defines a paragraph.
+
+SOURCE CODE:
+
+<p>This is a paragraph</p>
+
+
+SAMPLE OUTPUT:
+This is a paragraph
+
+7. <a>
+
+TAG DESCRIPTION:
+Creates a hyperlink.
+
+SOURCE CODE:
+
+<a href="https://google.com">Google</a>
+
+
+SAMPLE OUTPUT:
+Google (clickable link)
+
+8. <img>
+
+TAG DESCRIPTION:
+Displays an image.
+
+SOURCE CODE:
+
+<img src="image.jpg" alt="image">
+
+
+SAMPLE OUTPUT:
+Image displayed
+
+9. <div>
+
+TAG DESCRIPTION:
+Block container for layout.
+
+SOURCE CODE:
+
+<div>Section</div>
+
+
+SAMPLE OUTPUT:
+Section
+
+10. <span>
+
+TAG DESCRIPTION:
+Inline container for text styling.
+
+SOURCE CODE:
+
+<span>Inline text</span>
+
+
+SAMPLE OUTPUT:
+Inline text
+
+11. <button>
+
+TAG DESCRIPTION:
+Creates a clickable button.
+
+SOURCE CODE:
+
+<button>Click Me</button>
+
+
+SAMPLE OUTPUT:
+[ Click Me ]
+
+12. <input>
+
+TAG DESCRIPTION:
+Takes user input.
+
+SOURCE CODE:
+
+<input type="text">
+
+
+SAMPLE OUTPUT:
+Text box
+
+13. <form>
+
+TAG DESCRIPTION:
+Collects user data.
+
+SOURCE CODE:
+
+<form></form>
+
+
+SAMPLE OUTPUT:
+Form container
+
+14. <label>
+
+TAG DESCRIPTION:
+Labels form fields.
+
+SOURCE CODE:
+
+<label>Name</label>
+
+
+SAMPLE OUTPUT:
+Name
+
+15. <textarea>
+
+TAG DESCRIPTION:
+Multi-line text input.
+
+SOURCE CODE:
+
+<textarea></textarea>
+
+
+SAMPLE OUTPUT:
+Text area box
+
+16. <select>
+
+TAG DESCRIPTION:
+Dropdown list.
+
+SOURCE CODE:
+
+<select><option>Option</option></select>
+
+
+SAMPLE OUTPUT:
+Dropdown menu
+
+17. <option>
+
+TAG DESCRIPTION:
+Option inside dropdown.
+
+SOURCE CODE:
+
+<option>HTML</option>
+
+
+SAMPLE OUTPUT:
+HTML
+
+18. <ul>
+
+TAG DESCRIPTION:
+Unordered list.
+
+SOURCE CODE:
+
+<ul><li>Item</li></ul>
+
+
+SAMPLE OUTPUT:
+• Item
+
+19. <ol>
+
+TAG DESCRIPTION:
+Ordered list.
+
+SOURCE CODE:
+
+<ol><li>Item</li></ol>
+
+
+SAMPLE OUTPUT:
+
+Item
+
+20. <li>
+
+TAG DESCRIPTION:
+List item.
+
+SOURCE CODE:
+
+<li>List item</li>
+
+
+SAMPLE OUTPUT:
+List item
+
+21. <table>
+
+TAG DESCRIPTION:
+Displays data in table format.
+
+SOURCE CODE:
+
+<table></table>
+
+
+SAMPLE OUTPUT:
+Table structure
+
+22. <tr>
+
+TAG DESCRIPTION:
+Table row.
+
+SOURCE CODE:
+
+<tr></tr>
+
+
+SAMPLE OUTPUT:
+Row created
+
+23. <td>
+
+TAG DESCRIPTION:
+Table data cell.
+
+SOURCE CODE:
+
+<td>Data</td>
+
+
+SAMPLE OUTPUT:
+Data
+
+24. <th>
+
+TAG DESCRIPTION:
+Table header cell.
+
+SOURCE CODE:
+
+<th>Name</th>
+
+
+SAMPLE OUTPUT:
+Name (bold)
+
+25. <br>
+
+TAG DESCRIPTION:
+Line break.
+
+SOURCE CODE:
+
+Line1<br>Line2
+
+
+SAMPLE OUTPUT:
+Line1
+Line2
+
+26. <strong>
+
+TAG DESCRIPTION:
+Important bold text.
+
+SOURCE CODE:
+
+<strong>Important</strong>
+
+
+SAMPLE OUTPUT:
+Important
+
+27. <em>
+
+TAG DESCRIPTION:
+Emphasized italic text.
+
+SOURCE CODE:
+
+<em>Important</em>
+
+
+SAMPLE OUTPUT:
+Important
+
+28. <nav>
+
+TAG DESCRIPTION:
+Navigation section.
+
+SOURCE CODE:
+
+<nav>Menu</nav>
+
+
+SAMPLE OUTPUT:
+Menu
+
+29. <section>
+
+TAG DESCRIPTION:
+Defines a section of content.
+
+SOURCE CODE:
+
+<section>Content</section>
+
+
+SAMPLE OUTPUT:
+Content section
+
+30. <footer>
+
+TAG DESCRIPTION:
+Footer of webpage.
+
+SOURCE CODE:
+
+<footer>© 2026</footer>
+
+
+SAMPLE OUTPUT:
+© 2026
