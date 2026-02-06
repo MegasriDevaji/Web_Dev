@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SignIn Page</title>
+        <link rel="stylesheet" href="SignIn.css"> 
+    </head>
+    <body>
+        <div class="container">
+            <fieldset>
+            <legend>Sign In</legend>
+            <form>
+                <label>Name</label>
+                <input type="text" id="Name" placeholder="Enter your full Name" required>
+                <label>Email</label>
+                <input type="email" id="email" placeholder="Enter your valid email" required>
+                <label>Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+            
+                <label>Gender</label><br>
+            <input type="radio" name="g"> Male
+            <input type="radio" name="g"> Female
+            <span id="e7"></span><br><br>
+                <label>Choose the permission</label>
+                <div class="checkbox">
+                <input type="checkbox">Allow Photo
+                <input type="checkbox">Allow Contact
+                </div>
+                <label>Password</label>
+                <input type="password" id="password">
+                <label>Confirm Password</label>
+                <input type="password" id="Confirm_password">
+                <select id="Advanced">
+                    <option value="">Select</option>
+                    <option>High quality Books</option>
+                    <option>One day delievery</option>
+                    <option>Free Delievery for first order</option>
+                </select>
+                <button type="submit" onclick="validateform">
+                    Submit
+                </button>
+                
+                <button type="reset" onclick="clearform">Clear</button>
+            </form>
+            </fieldset>
+        </div>
+        <script src="SignIn.js"></script>
+    </body>
+</html>
