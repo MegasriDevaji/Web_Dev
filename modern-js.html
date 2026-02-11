@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modern JS Output on Page</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#f4f4f4; padding:20px; }
+    .box { background:red; padding:15px; margin-bottom:10px; border-radius:8px; }
+    h2 { color:#333; }
+  </style>
+</head>
+<body>
+
+  <h1>Modern JavaScript Functions – Output</h1>
+  <div id="output"></div>
+
+  <script>
+    const out = document.getElementById("output");
+
+    function print(title, value) {
+      out.innerHTML += `<div class="box"><h2>${title}</h2><p>${value}</p></div>`;
+    }
+
+    // 1. Arrow Function
+    const add = (a, b) => a + b;
+    print("Arrow Function", add(5, 3));
+
+    // 2. Default Parameters
+    function welcome(name = "Guest") {
+      return `Welcome ${name}`;
+    }
+    print("Default Parameter", welcome());
+    print("Default Parameter with Name", welcome("Keerthana"));
+
+    // 3. Rest Parameters
+    function sum(...nums) {
+      return nums.reduce((a, b) => a + b, 0);
+    }
+    print("Rest Parameter", sum(1, 2, 3, 4, 5));
+
+    // 4. Destructuring
+    function printUser({ name, age }) {
+      return `${name} is ${age} years old`;
+    }
+    print("Destructuring", printUser({ name: "Keerthana", age: 19 }));
+
+    // 5. Callback
+    function process(data, callback) {
+      callback(data);
+    }
+    process("Hello Callback", msg => print("Callback Function", msg));
+
+    // 6. Higher Order Functions
+    const numbers = [1, 2, 3, 4];
+    print("Map", numbers.map(n => n * 2));
+    print("Filter", numbers.filter(n => n % 2 === 0));
+    print("Reduce", numbers.reduce((a, b) => a + b, 0));
+
+    // 7. Async / Await
+    async function getData() {
+      return "Data Received!";
+    }
+    getData().then(res => print("Async/Await", res));
+
+    // 8. IIFE
+    (() => {
+      print("IIFE", "Runs Immediately!");
+    })();
+
+    // 9. Function Expression
+    const sayHi = function(name) {
+      return "Hi " + name;
+    };
+    print("Function Expression", sayHi("Keerthana"));
+
+    // 10. Generator
+    function* countUp() {
+      let i = 1;
+      while (i <= 3) {
+        yield i++;
+      }
+    }
+    const counter = countUp();
+    print("Generator", counter.next().value);
+    print("Generator", counter.next().value);
+    print("Generator", counter.next().value);
+  </script>
+
+</body>
+</html>
