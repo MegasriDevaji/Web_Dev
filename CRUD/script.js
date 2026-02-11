@@ -10,7 +10,7 @@ function addData() {
         return;
     }
 
-    const obj = {
+    const obj  = {
         id: Date.now(),
         name: name,
         email: email
