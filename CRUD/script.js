@@ -67,6 +67,7 @@ function updateData() {
 function deleteData(id) {
     data = data.filter(d => d.id !== id);
     displayData();
+    clearFields();
 }
 
 function clearFields() {

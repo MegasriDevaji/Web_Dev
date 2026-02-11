@@ -1,39 +1,40 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #e0ec2d;
     padding: 20px;
 }
 
 h2 {
-    text-align: center;
+    text-align:centte;
 }
 
 .container {
-    text-align: center;
+    text-align:center;
     margin-bottom: 20px;
 }
 
 input {
     padding: 10px;
-    margin: 5px;
+    margin: 10px;
 }
 
 button {
-    padding: 5px 12px;
-    margin: 5px;
+    padding: 5px 5px;
+    margin: 10px;
     cursor: pointer;
 }
 
 table {
     width: 100%;
-    background: white;
+    color: rgb(3, 3, 3);
+    background: #f0ebeb;
+    border: #cccccc;
 }
 
 th, td {
     padding: 10px;
-     border: 1px solid #ccc;
-
-    text-align: center;
+     border: 1px solid #420c0c;
+    text-align:center;
 }
 
 button.edit {
