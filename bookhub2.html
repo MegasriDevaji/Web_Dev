@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BookHub - Events & Objects</title>
+
+<style>
+body{
+  font-family: Arial;
+  background:#f4f6f9;
+  text-align:center;
+}
+form{
+  margin:20px auto;
+}
+input{
+  padding:5px;
+  margin:5px;
+}
+button{
+  padding:8px;
+  background:#4a69bd;
+  color:white;
+  border:none;
+  cursor:pointer;
+}
+#output{
+  margin-top:20px;
+  font-size:18px;
+  color:green;
+}
+</style>
+
+<script>
+class Book {
+  constructor(user, favBook) {
+    this.user = user;
+    this.favBook = favBook;
+  }
+
+  message = () => {
+    return "Welcome " + this.user + 
+           "! Your favorite book is " + this.favBook;
+  }
+}
+
+function handleSubmit(event){
+  event.preventDefault();   // Stop default form submission
+
+  let name = document.getElementById("name").value;
+  let book = document.getElementById("book").value;
+
+  if(name=="" || book==""){
+    alert("All fields required");
+    return;
+  }
+
+  const user1 = new Book(name, book);   // Object creation
+
+  document.getElementById("output").innerHTML =
+        user1.message();   // DOM update
+}
+</script>
+
+</head>
+
+<body>
+
+<h2>BookHub Registration</h2>
+
+<form onsubmit="handleSubmit(event)">
+  Name: <input type="text" id="name"><br>
+  Favorite Book: <input type="text" id="book"><br>
+  <button type="submit">Submit</button>
+</form>
+
+<div id="output"></div>
+
+</body>
+</html>
