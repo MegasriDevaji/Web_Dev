@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blood Donation Registration</title>
+    <style>
+        body { font-family: Arial; }
+        .error { color: red; font-size: 14px; }
+        .success { color: green; }
+        input { display: block; margin-bottom: 10px; padding: 5px; }
+        button { padding: 8px 15px; }
+    </style>
+</head>
+<body>
+
+<h2>Blood Donation Registration</h2>
+
+<form id="donorForm">
+
+    <label>Name:</label>
+    <input type="text" id="name" onkeyup="validateName()">
+    <span id="nameError" class="error"></span>
+
+    <label>Email:</label>
+    <input type="text" id="email" onkeyup="validateEmail()">
+    <span id="emailError" class="error"></span>
+
+    <label>Phone:</label>
+    <input type="text" id="phone" onkeyup="validatePhone()">
+    <span id="phoneError" class="error"></span>
+
+    <label>Blood Group:</label>
+    <input type="text" id="blood" onkeyup="validateBlood()">
+    <span id="bloodError" class="error"></span>
+
+    <button type="button" onclick="submitForm()">Register</button>
+
+</form>
+
+<p id="message"></p>
+<p id="clock"></p>
+
+<script>
+
+// ⏱ Live Clock using Time Function
+setInterval(function(){
+    document.getElementById("clock").innerHTML =
+        "Current Time: " + new Date().toLocaleTimeString();
+}, 1000);
+
+// 🔎 Pattern Validations
+
+function validateName(){
+    let name = document.getElementById("name").value;
+    let pattern = /^[A-Za-z ]{3,}$/;
+
+    if(!pattern.test(name)){
+        document.getElementById("nameError").innerHTML =
+            "Enter valid name (min 3 letters)";
+        return false;
+    } else {
+        document.getElementById("nameError").innerHTML = "";
+        return true;
+    }
+}
+
+function validateEmail(){
+    let email = document.getElementById("email").value;
+    let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+    if(!pattern.test(email)){
+        document.getElementById("emailError").innerHTML =
+            "Enter valid email";
+        return false;
+    } else {
+        document.getElementById("emailError").innerHTML = "";
+        return true;
+    }
+}
+
+function validatePhone(){
+    let phone = document.getElementById("phone").value;
+    let pattern = /^[0-9]{10}$/;
+
+    if(!pattern.test(phone)){
+        document.getElementById("phoneError").innerHTML =
+            "Enter 10 digit number";
+        return false;
+    } else {
+        document.getElementById("phoneError").innerHTML = "";
+        return true;
+    }
+}
+
+function validateBlood(){
+    let blood = document.getElementById("blood").value.toUpperCase();
+    let pattern = /^(A|B|AB|O)[+-]$/;
+
+    if(!pattern.test(blood)){
+        document.getElementById("bloodError").innerHTML =
+            "Enter valid blood group (A+, O-, etc.)";
+        return false;
+    } else {
+        document.getElementById("bloodError").innerHTML = "";
+        return true;
+    }
+}
+
+// 🖱 Mouse Event (Button Click)
+function submitForm(){
+
+    if(validateName() && validateEmail() &&
+       validatePhone() && validateBlood()){
+
+        document.getElementById("message").innerHTML =
+            "Registration Successful!";
+        document.getElementById("message").className = "success";
+
+        // ⏳ Time function (auto clear after 3 sec)
+        setTimeout(function(){
+            document.getElementById("message").innerHTML = "";
+            document.getElementById("donorForm").reset();
+        }, 3000);
+
+    } else {
+        document.getElementById("message").innerHTML =
+            "Please fix errors before submitting!";
+        document.getElementById("message").className = "error";
+    }
+}
+
+</script>
+
+</body>
+</html>

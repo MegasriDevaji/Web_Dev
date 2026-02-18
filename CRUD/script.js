@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let data = [];
 let editId = null;
 
@@ -75,3 +76,5 @@ function clearFields() {
     document.getElementById("email").value = "";
 }
    
+=======
+>>>>>>> 566ba60 (pushed on 18-2)
