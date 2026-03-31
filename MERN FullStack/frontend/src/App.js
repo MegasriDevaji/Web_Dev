@@ -5,7 +5,7 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import BookList from './components/BookList';
 import BookForm from './components/BookForm';
-import './App.css';
+import './App.scss';
 
 const theme = createTheme({
   palette: {
