@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookhub SYSTEM "bookhub-dtd.dtd">
+<bookhub>
+    <storeName>BookHub</storeName>
+    <books>
+        <book id="B201">
+            <title>Rich Dad Poor Dad</title>
+            <author>Robert T. Kiyosaki</author>
+            <category>Finance</category>
+            <price>450</price>
+            <stock>14</stock>
+        </book>
+        <book id="B202">
+            <title>Introduction to Algorithms</title>
+            <author>Thomas H. Cormen</author>
+            <category>Programming</category>
+            <price>899</price>
+            <stock>8</stock>
+        </book>
+        <book id="B203">
+            <title>The Psychology of Money</title>
+            <author>Morgan Housel</author>
+            <category>Finance</category>
+            <price>520</price>
+            <stock>21</stock>
+        </book>
+    </books>
+</bookhub>

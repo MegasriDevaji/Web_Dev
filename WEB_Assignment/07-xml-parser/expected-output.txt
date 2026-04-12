@@ -1,0 +1,19 @@
+BookHub XML Parser Output
+-------------------------
+Book ID   : B601
+Title     : Do Epic Shit
+Author    : Ankur Warikoo
+Category  : Motivation
+Price     : 350
+
+Book ID   : B602
+Title     : Spring in Action
+Author    : Craig Walls
+Category  : Programming
+Price     : 790
+
+Book ID   : B603
+Title     : The Power of Now
+Author    : Eckhart Tolle
+Category  : Spirituality
+Price     : 410

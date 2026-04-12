@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<BookHubSystem>
+    <UserRecord>
+        <UserId>U001</UserId>
+        <Name>Guest Reader</Name>
+        <PreferredCategory>Programming</PreferredCategory>
+    </UserRecord>
+
+    <BookRecords>
+        <BookRecord>
+            <BookId>B101</BookId>
+            <Title>Clean Code</Title>
+            <Author>Robert C. Martin</Author>
+            <Category>Programming</Category>
+        </BookRecord>
+        <BookRecord>
+            <BookId>B102</BookId>
+            <Title>Atomic Habits</Title>
+            <Author>James Clear</Author>
+            <Category>Self Help</Category>
+        </BookRecord>
+        <BookRecord>
+            <BookId>B103</BookId>
+            <Title>The Alchemist</Title>
+            <Author>Paulo Coelho</Author>
+            <Category>Fiction</Category>
+        </BookRecord>
+        <BookRecord>
+            <BookId>B104</BookId>
+            <Title>Wings of Fire</Title>
+            <Author>A. P. J. Abdul Kalam</Author>
+            <Category>Biography</Category>
+        </BookRecord>
+    </BookRecords>
+
+    <OrderRecord>
+        <OrderId>ORD501</OrderId>
+        <SelectedBook>Clean Code</SelectedBook>
+        <Quantity>1</Quantity>
+        <Price>699</Price>
+    </OrderRecord>
+
+    <BookHubSteps>
+        <StepRecord>
+            <StepNo>1</StepNo>
+            <Instruction>Login to the BookHub portal</Instruction>
+        </StepRecord>
+        <StepRecord>
+            <StepNo>2</StepNo>
+            <Instruction>Browse the available books</Instruction>
+        </StepRecord>
+        <StepRecord>
+            <StepNo>3</StepNo>
+            <Instruction>Select the desired book</Instruction>
+        </StepRecord>
+        <StepRecord>
+            <StepNo>4</StepNo>
+            <Instruction>Place the order successfully</Instruction>
+        </StepRecord>
+    </BookHubSteps>
+</BookHubSystem>

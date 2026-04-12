@@ -1,0 +1,18 @@
+Expected Output Summary
+
+1. All titles:
+- Ikigai
+- Effective Java
+- The Hobbit
+- Zero to One
+
+2. Programming books:
+- Effective Java
+
+3. Books with price greater than 500:
+- Effective Java
+- The Hobbit
+
+4. Custom XML output:
+- Each book will be shown inside a <bookdetails> element
+- Title and author will appear as child elements

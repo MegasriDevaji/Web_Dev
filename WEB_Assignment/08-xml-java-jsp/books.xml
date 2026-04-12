@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookhub>
+    <book id="B701">
+        <title>Can't Hurt Me</title>
+        <author>David Goggins</author>
+        <category>Motivation</category>
+        <price>550</price>
+    </book>
+    <book id="B702">
+        <title>Java Concurrency in Practice</title>
+        <author>Brian Goetz</author>
+        <category>Programming</category>
+        <price>920</price>
+    </book>
+    <book id="B703">
+        <title>Think Like a Monk</title>
+        <author>Jay Shetty</author>
+        <category>Self Help</category>
+        <price>430</price>
+    </book>
+</bookhub>

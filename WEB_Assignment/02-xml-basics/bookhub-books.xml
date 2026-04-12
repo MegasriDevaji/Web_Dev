@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookhub>
+    <storeName>BookHub</storeName>
+    <location>Chennai</location>
+    <books>
+        <book id="B101">
+            <title>The Alchemist</title>
+            <author>Paulo Coelho</author>
+            <category>Fiction</category>
+            <price>399</price>
+            <stock>20</stock>
+        </book>
+        <book id="B102">
+            <title>Clean Code</title>
+            <author>Robert C. Martin</author>
+            <category>Programming</category>
+            <price>650</price>
+            <stock>15</stock>
+        </book>
+        <book id="B103">
+            <title>Atomic Habits</title>
+            <author>James Clear</author>
+            <category>Self Help</category>
+            <price>499</price>
+            <stock>25</stock>
+        </book>
+        <book id="B104">
+            <title>Harry Potter and the Sorcerer's Stone</title>
+            <author>J. K. Rowling</author>
+            <category>Fantasy</category>
+            <price>550</price>
+            <stock>18</stock>
+        </book>
+    </books>
+</bookhub>

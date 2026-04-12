@@ -1,0 +1,26 @@
+Expected Results
+
+1. All book titles:
+- Deep Work
+- Java: The Complete Reference
+- Think and Grow Rich
+- Head First Design Patterns
+
+2. Programming books:
+- Java: The Complete Reference
+- Head First Design Patterns
+
+3. Books with price greater than 500:
+- Java: The Complete Reference
+- Head First Design Patterns
+
+4. Author of book B303:
+- Napoleon Hill
+
+5. Last book title:
+- Head First Design Patterns
+
+6. Books with stock less than 15:
+- Deep Work
+- Java: The Complete Reference
+- Head First Design Patterns

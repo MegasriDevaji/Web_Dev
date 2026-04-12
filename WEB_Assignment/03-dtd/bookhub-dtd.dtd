@@ -1,0 +1,10 @@
+<!ELEMENT bookhub (storeName, books)>
+<!ELEMENT storeName (#PCDATA)>
+<!ELEMENT books (book+)>
+<!ELEMENT book (title, author, category, price, stock)>
+<!ATTLIST book id ID #REQUIRED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT stock (#PCDATA)>

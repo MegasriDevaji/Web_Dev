@@ -1,0 +1,24 @@
+BookHub XML Basics Assignment
+
+Root element:
+- bookhub
+
+Child elements:
+- storeName
+- location
+- books
+
+Repeated element:
+- book
+
+Book fields:
+- id attribute
+- title
+- author
+- category
+- price
+- stock
+
+Purpose:
+This XML file stores basic book details for the BookHub e-commerce platform.
+It shows a simple hierarchical structure with elements, attributes, and repeated nodes.

@@ -1,0 +1,19 @@
+XPath Queries for BookHub
+
+1. Select all book titles
+/bookhub/books/book/title
+
+2. Select all programming books
+/bookhub/books/book[category='Programming']
+
+3. Select books with price greater than 500
+/bookhub/books/book[price>500]
+
+4. Select the author of book with id B303
+/bookhub/books/book[@id='B303']/author
+
+5. Select the last book title
+/bookhub/books/book[last()]/title
+
+6. Select books with stock less than 15
+/bookhub/books/book[stock<15]

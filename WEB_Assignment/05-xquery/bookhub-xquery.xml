@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookhub>
+    <books>
+        <book id="B401">
+            <title>Ikigai</title>
+            <author>Hector Garcia</author>
+            <category>Self Help</category>
+            <price>420</price>
+        </book>
+        <book id="B402">
+            <title>Effective Java</title>
+            <author>Joshua Bloch</author>
+            <category>Programming</category>
+            <price>780</price>
+        </book>
+        <book id="B403">
+            <title>The Hobbit</title>
+            <author>J. R. R. Tolkien</author>
+            <category>Fantasy</category>
+            <price>540</price>
+        </book>
+        <book id="B404">
+            <title>Zero to One</title>
+            <author>Peter Thiel</author>
+            <category>Business</category>
+            <price>460</price>
+        </book>
+    </books>
+</bookhub>

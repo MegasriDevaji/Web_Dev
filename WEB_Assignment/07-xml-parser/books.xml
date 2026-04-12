@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookhub>
+    <book id="B601">
+        <title>Do Epic Shit</title>
+        <author>Ankur Warikoo</author>
+        <category>Motivation</category>
+        <price>350</price>
+    </book>
+    <book id="B602">
+        <title>Spring in Action</title>
+        <author>Craig Walls</author>
+        <category>Programming</category>
+        <price>790</price>
+    </book>
+    <book id="B603">
+        <title>The Power of Now</title>
+        <author>Eckhart Tolle</author>
+        <category>Spirituality</category>
+        <price>410</price>
+    </book>
+</bookhub>

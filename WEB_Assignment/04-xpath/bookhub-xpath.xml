@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookhub>
+    <books>
+        <book id="B301">
+            <title>Deep Work</title>
+            <author>Cal Newport</author>
+            <category>Productivity</category>
+            <price>480</price>
+            <stock>12</stock>
+        </book>
+        <book id="B302">
+            <title>Java: The Complete Reference</title>
+            <author>Herbert Schildt</author>
+            <category>Programming</category>
+            <price>820</price>
+            <stock>10</stock>
+        </book>
+        <book id="B303">
+            <title>Think and Grow Rich</title>
+            <author>Napoleon Hill</author>
+            <category>Motivation</category>
+            <price>350</price>
+            <stock>30</stock>
+        </book>
+        <book id="B304">
+            <title>Head First Design Patterns</title>
+            <author>Eric Freeman</author>
+            <category>Programming</category>
+            <price>760</price>
+            <stock>6</stock>
+        </book>
+    </books>
+</bookhub>

@@ -1,0 +1,23 @@
+XQuery Examples for BookHub
+
+1. List all book titles
+for $b in /bookhub/books/book
+return $b/title
+
+2. Show programming books
+for $b in /bookhub/books/book
+where $b/category = 'Programming'
+return $b
+
+3. Show books with price greater than 500
+for $b in /bookhub/books/book
+where $b/price > 500
+return $b/title
+
+4. Show title and author in custom format
+for $b in /bookhub/books/book
+return
+<bookdetails>
+    <title>{data($b/title)}</title>
+    <author>{data($b/author)}</author>
+</bookdetails>

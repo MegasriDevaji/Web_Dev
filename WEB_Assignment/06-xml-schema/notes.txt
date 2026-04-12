@@ -1,0 +1,16 @@
+XML Schema Assignment Notes
+
+Files:
+- bookhub-schema.xml
+- bookhub-schema.xsd
+
+Purpose:
+The XML file stores BookHub book data.
+The XSD file defines the structure and data types.
+
+Schema concepts shown:
+- element definitions
+- complexType
+- sequence
+- required attribute
+- data types like string, decimal, and int

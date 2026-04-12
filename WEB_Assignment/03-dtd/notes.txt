@@ -1,0 +1,15 @@
+DTD Assignment Notes
+
+Files:
+- bookhub-dtd.xml
+- bookhub-dtd.dtd
+
+Purpose:
+The XML file stores BookHub book data.
+The DTD file defines the valid structure of the XML document.
+
+DTD concepts shown:
+- ELEMENT declarations
+- ATTLIST declaration
+- Required ID attribute
+- Repeated book elements using +

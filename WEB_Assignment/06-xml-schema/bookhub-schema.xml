@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookhub xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="bookhub-schema.xsd">
+    <books>
+        <book id="B501">
+            <title>Wings of Fire</title>
+            <author>A. P. J. Abdul Kalam</author>
+            <category>Biography</category>
+            <price>300</price>
+            <stock>40</stock>
+        </book>
+        <book id="B502">
+            <title>Refactoring</title>
+            <author>Martin Fowler</author>
+            <category>Programming</category>
+            <price>850</price>
+            <stock>9</stock>
+        </book>
+        <book id="B503">
+            <title>The Monk Who Sold His Ferrari</title>
+            <author>Robin Sharma</author>
+            <category>Self Help</category>
+            <price>420</price>
+            <stock>26</stock>
+        </book>
+    </books>
+</bookhub>
